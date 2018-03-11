@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Modal Overlay@3" translatesAutoresizingMaskIntoConstraints="NO" id="Kn6-x1-yAW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuA-LE-ytb">
+                                <rect key="frame" x="99" y="323" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kn6-x1-yAW" secondAttribute="trailing" id="0Tw-Um-O7G"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="DuA-LE-ytb" secondAttribute="bottom" constant="323" id="6Dv-wq-ier"/>
+                            <constraint firstItem="Kn6-x1-yAW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7np-qK-ygb"/>
+                            <constraint firstItem="DuA-LE-ytb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="303" id="OiF-Ci-i9T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DuA-LE-ytb" secondAttribute="trailing" constant="84" id="s8P-mv-U1e"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Kn6-x1-yAW" secondAttribute="bottom" id="wdE-Qg-D4X"/>
+                            <constraint firstItem="DuA-LE-ytb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="83" id="z36-hZ-YC8"/>
+                            <constraint firstItem="Kn6-x1-yAW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zfK-Vm-mBA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Modal Overlay@3" width="1125" height="2001"/>
+    </resources>
 </document>
